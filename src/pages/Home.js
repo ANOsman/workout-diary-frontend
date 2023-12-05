@@ -15,7 +15,7 @@ const Home = () => {
         const fetchWorkouts = async () => {
             const response = await fetch('/api/workouts', {
                 headers: {
-                    'Authorization': `Bearer ${user.token}`
+                    'authorization': `Bearer ${user.token}`
                 }
             });
             const json = await response.json()
